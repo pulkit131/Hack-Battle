@@ -7,8 +7,8 @@ const dataSet1 = [
 ];
 
 const dataSet2 = [
-  { name: "Pass", value: 1200 },
-  { name: "Fail", value: 300 },
+  { name: "Pass", value: 1350 },
+  { name: "Fail", value: 150 },
 ];
 
 const dataSet3 = [

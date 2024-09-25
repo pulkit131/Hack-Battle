@@ -7,7 +7,7 @@ import Dashboard from '../src/pages/Dashboard';
 import Products from '../src/pages/Product';
 import Layout from "./components/shared/Layout";
 import Xray from "./components/Xray";
-
+import DeepFake from "./components/DeepFake";
 function App() {
   const location = useLocation();
 
@@ -26,6 +26,7 @@ function App() {
       {location.pathname === "/" && <DivSlider />}
 
       <Footer />
+      {/* <DeepFake/> */}
     </>
   );
 }

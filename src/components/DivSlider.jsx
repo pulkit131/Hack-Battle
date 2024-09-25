@@ -23,7 +23,7 @@ const DivSlider = () => {
   ></iframe>
 </div>
 
-                    <h2 className='text-white text-xl font-semibold mt-20'>Strategy</h2>
+                    <h2 className='text-white text-xl font-semibold mt-20'>Medical Image Synthesizer</h2>
                     <p className='text-white mt-4'>
                         Describe the service and how customers or clients can benefit from it. 
                         It’s an opportunity to add a short description with relevant details, 
@@ -52,7 +52,7 @@ const DivSlider = () => {
                 <div className='w-1/2 bg-gray-100 flex flex-col justify-center items-center text-center p-10 rounded-tl-3xl rounded-bl-3xl'>
                 <img src={Image2} alt='Strategy Icon' className='mx-auto mb-4 w-32 h-32' />
 
-                    <h2 className='text-xl font-semibold'>Strategy</h2>
+                    <h2 className='text-xl font-semibold'>Deep-Fake Img Recognition</h2>
                     <p className='text-gray-600'>
                         Describe the service and how customers or clients can benefit from it. 
                         It’s an opportunity to add a short description with relevant details, 
@@ -95,7 +95,7 @@ const DivSlider = () => {
     allowFullScreen
   ></iframe>
 </div>
-                    <h2 className='text-white text-xl font-semibold'>Execution</h2>
+                    <h2 className='text-white text-xl font-semibold'>Medical Prescription Analyzer</h2>
                     <p className='text-white'>
                         Describe the service and how customers or clients can benefit from it. 
                         It’s an opportunity to add a short description with relevant details, 

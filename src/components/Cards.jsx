@@ -62,21 +62,21 @@ const Cards = () => {
         <div className="flex-1 flex gap-12 items-center justify-center space-x-8 h-full">
             <Card
                 number="01"
-                title="Card One"
+                title="Medical Image Synthesizer"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image1} // Replace with your image URL
                 hoverImage={Image2} // Optional hover image
             />
             <Card
                 number="02"
-                title="Card Two"
+                title="Deep-Fake Img Recognition"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image2} // Replace with your image URL
                 hoverImage={Image3} // Optional hover image
             />
             <Card
                 number="03"
-                title="Card Three"
+                title="Medical Prescription Analyzer"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image3} // Replace with your image URL
                 hoverImage={Image1} // Optional hover image
