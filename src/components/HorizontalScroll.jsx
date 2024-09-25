@@ -6,7 +6,6 @@ const HorizontalScroll = () => {
         <div className="overflow-x-auto scrollbar-hidden whitespace-nowrap h-screen">
             <Section title="Page One" content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti iste exercitationem nam autem, aperiam corporis qui necessitatibus. Ratione, laudantium vitae. Dolorem, libero quo ratione voluptatem nobis sit nostrum recusandae temporibus?" bgColor="bg-gray-900" />
             <Section title="Page Two" content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti iste exercitationem nam autem, aperiam corporis qui necessitatibus. Ratione, laudantium vitae. Dolorem, libero quo ratione voluptatem nobis sit nostrum recusandae temporibus?" bgColor="bg-black" />
-            <Section title="Page Three" content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti iste exercitationem nam autem, aperiam corporis qui necessitatibus. Ratione, laudantium vitae. Dolorem, libero quo ratione voluptatem nobis sit nostrum recusandae temporibus?" bgColor="bg-gray-900" />
         </div>
     );
 }

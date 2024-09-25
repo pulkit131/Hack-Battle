@@ -1,4 +1,5 @@
 import React from 'react';
+import FAQPage from './FAQPage.jsx';
 import Image1 from '../assets/w1.3.r.png';
 import Image2 from '../assets/w2a.r.png';
 import Image3 from '../assets/w2b.r.png';
@@ -94,6 +95,10 @@ const DivSlider = () => {
                         like pricing, duration and how to book.
                     </p>
                 </div>
+            </div>
+            {/* FAQ Section */}
+            <div className='w-full sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-blue-100 mx-auto '>
+                <FAQPage /> {/* Adding FAQPage component here */}
             </div>
 
             
