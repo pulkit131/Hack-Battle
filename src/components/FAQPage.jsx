@@ -94,8 +94,8 @@ const FAQPage = () => {
     };
 
     return (
-        <div className="max-w-full mx-auto p-0 box-border bg-black">
-            <div className="bg-blue-500 text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
+        <div className="max-w-full mx-auto p-0 box-border bg-black rounded-tl-3xl rounded-tr-3xl">
+            <div className="bg-green-700 text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
                 <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
                 <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-cyan-400">Us!</span></h1>
                 <input className="w-full max-w-xs p-2 border border-cyan-400 text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" />

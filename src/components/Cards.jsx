@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
-import Image1 from '../assets/w1.3.r.png';
+import Image1 from '../assets/green_image.png';
 import Image2 from '../assets/w2a.r.png';
 import Image3 from '../assets/w2b.r.png';
 
@@ -20,7 +20,7 @@ const Card = ({ number, title, content, image }) => {
     return (
         <div
             ref={cardRef}
-            className="relative w-[350px] h-[450px] m-4 shadow-lg rounded-xl bg-black bg-opacity-10 backdrop-filter backdrop-blur-md flex justify-center items-center border border-black overflow-hidden"
+            className="relative w-[350px] h-[450px] m-4 shadow-lg rounded-xl bg-black bg-opacity-0 backdrop-filter backdrop-blur-md flex justify-center items-center border border-black overflow-hidden"
         >
             <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover opacity-30" />
             <div className="p-5 text-center transition-transform duration-500 opacity-0 hover:opacity-100 hover:translate-y-5 relative z-10">
