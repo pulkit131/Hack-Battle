@@ -6,6 +6,7 @@ import Register from '../src/pages/Register';
 import Dashboard from '../src/pages/Dashboard';
 import Products from '../src/pages/Product';
 import Layout from "./components/shared/Layout";
+import Xray from "./components/Xray";
 
 function App() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="products" element={<Products />} />
+          <Route path="/xray" element={<Xray />} />
         </Route>
         <Route path="/register" element={<Register />} />
       </Routes>

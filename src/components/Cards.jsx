@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 import Image1 from '../assets/green_image.png';
 import Image2 from '../assets/w2a.r.png';
@@ -32,9 +33,11 @@ const Card = ({ number, title, content, image }) => {
                 <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg">
                     Read More
                 </button>
-                <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg ml-2">
-                    Run!
-                </button>
+                <Link to="/xray">
+                    <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg ml-2">
+                        Run!
+                    </button>
+                </Link>
             </div>
         </div>
     );
