@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 import Image1 from '../assets/H0.jpg';
 import Image2 from '../assets/H1.jpg';
-import Image3 from '../assets/w2b.r.png';
+import Image3 from '../assets/H2.jpg';
 
 const Card = ({ number, title, content, image, hoverImage }) => {
     const cardRef = useRef(null);
@@ -26,7 +26,7 @@ const Card = ({ number, title, content, image, hoverImage }) => {
             <img
                 src={image}
                 alt={title}
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 hover:opacity-30"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 hover:opacity-10"
             />
             
             {/* Optional Hover Image (appears on hover if passed) */}
@@ -34,7 +34,7 @@ const Card = ({ number, title, content, image, hoverImage }) => {
                 <img
                     src={hoverImage}
                     alt={title}
-                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100"
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-20"
                 />
             )}
 
@@ -42,8 +42,8 @@ const Card = ({ number, title, content, image, hoverImage }) => {
                 <h2 className="absolute top-[-150px] right-2 text-[13em] text-black text-opacity-5 pointer-events-none">
                     {number}
                 </h2>
-                <h3 className="text-4xl text-black mb-8">{title}</h3>
-                <p className="text-base text-black text-justify mb-8">{content}</p>
+                <h3 className="text-4xl text-white mb-8">{title}</h3>
+                <p className="text-base text-white text-justify mb-8">{content}</p>
                 <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg">
                     Read More
                 </button>
