@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
-import Image1 from '../assets/green_image.png';
-import Image2 from '../assets/w2a.r.png';
+import Image1 from '../assets/H0.jpg';
+import Image2 from '../assets/H1.jpg';
 import Image3 from '../assets/w2b.r.png';
 
-
-const Card = ({ number, title, content, image }) => {
+const Card = ({ number, title, content, image, hoverImage }) => {
     const cardRef = useRef(null);
 
     useEffect(() => {
@@ -20,10 +19,25 @@ const Card = ({ number, title, content, image }) => {
     return (
         <div
             ref={cardRef}
-            className="relative w-[350px] h-[450px] m-4 shadow-lg rounded-xl bg-black bg-opacity-0 backdrop-filter backdrop-blur-md flex justify-center items-center border border-black overflow-hidden"
+            className="relative w-[350px] h-[450px] m-4 shadow-lg rounded-xl bg-black bg-opacity-0 backdrop-filter backdrop-blur-md flex justify-center items-center border border-black overflow-hidden transition-transform duration-500 hover:scale-105"
         >
-            <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover opacity-30" />
-            <div className="p-5 text-center transition-transform duration-500 opacity-0 hover:opacity-100 hover:translate-y-5 relative z-10">
+            {/* Main Image */}
+            <img
+                src={image}
+                alt={title}
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 hover:opacity-30"
+            />
+            
+            {/* Optional Hover Image (appears on hover if passed) */}
+            {hoverImage && (
+                <img
+                    src={hoverImage}
+                    alt={title}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 hover:opacity-100"
+                />
+            )}
+
+            <div className="p-5 text-center transition-opacity duration-500 opacity-0 hover:opacity-100 relative z-10">
                 <h2 className="absolute top-[-150px] right-2 text-[13em] text-black text-opacity-5 pointer-events-none">
                     {number}
                 </h2>
@@ -48,18 +62,21 @@ const Cards = () => {
                 title="Card One"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image1} // Replace with your image URL
+                hoverImage={Image2} // Optional hover image
             />
             <Card
                 number="02"
                 title="Card Two"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image2} // Replace with your image URL
+                hoverImage={Image3} // Optional hover image
             />
             <Card
                 number="03"
                 title="Card Three"
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image3} // Replace with your image URL
+                hoverImage={Image1} // Optional hover image
             />
         </div>
     );

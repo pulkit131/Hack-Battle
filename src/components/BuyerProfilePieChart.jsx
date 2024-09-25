@@ -19,9 +19,14 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 export default function BuyerProfilePieChart({ dataSets }) {
     return (
-        <div className="w-full flex flex-wrap">
+        <div className="w-full flex flex-wrap ml-8">
             {dataSets.map((data, index) => (
-                <div key={index} className="w-[20rem] h-[22rem] bg-white p-4 rounded-sm flex flex-col m-4">
+                <div 
+                key={index} 
+                className="w-[20rem] h-[22rem] bg-white p-4 rounded-2xl flex flex-col m-4 
+                           shadow-lg transform transition-transform duration-300 ease-in-out 
+                           hover:scale-105 hover:shadow-2xl"
+              >
                     <strong className="text-gray-700 font-medium">Accuracy</strong>
                     <div className="mt-3 w-full flex-1 text-xs">
                         <ResponsiveContainer width="100%" height="100%">
