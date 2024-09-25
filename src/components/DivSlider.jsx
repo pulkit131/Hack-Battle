@@ -6,7 +6,7 @@ import Image3 from '../assets/w2b.r.png';
 
 const DivSlider = () => {
     return (
-        <div className='w-full h-full py-[10%]' style={{ backgroundColor: '#39FF14' }}>
+        <div className='w-full h-full py-[10%] bg-green-500'>
   {/* Your content here */}
 
 

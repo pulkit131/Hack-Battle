@@ -6,6 +6,7 @@ import Register from '../src/pages/Register'
 import Dashboard from '../src/pages/Dashboard'
 import Products from '../src/pages/Product'
 import Layout from "./components/shared/Layout";
+
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         </Router>
       <DivSlider/>
       <Footer/>
+     
     </>
   );
 }

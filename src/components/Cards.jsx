@@ -42,7 +42,7 @@ const Card = ({ number, title, content, image }) => {
 
 const Cards = () => {
     return (
-        <div className="flex flex-nowrap items-center justify-center space-x-6 h-full">
+        <div className="flex-1 flex gap-12 items-center justify-center space-x-8 h-full">
             <Card
                 number="01"
                 title="Card One"
