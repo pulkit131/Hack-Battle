@@ -17,7 +17,7 @@ export default function Dashboard() {
 			</div>
 			<div className="flex flex-row gap-4 w-full">
 				{/* <RecentOrders /> */}
-				<Carousel />
+				{/* <Carousel /> */}
 				{/* <DivSlider /> */}
 				{/* <PopularProducts /> */}
 			</div>

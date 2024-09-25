@@ -104,9 +104,9 @@ const DivSlider = () => {
                 </div>
             </div>
             {/* FAQ Section */}
-            <div className='w-full sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-blue-100 mx-auto '>
-                <FAQPage /> {/* Adding FAQPage component here */}
-            </div>
+            {/* <div className='w-full sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-blue-100 mx-auto '>
+                <FAQPage /> 
+            </div> */}
 
             
         </div>

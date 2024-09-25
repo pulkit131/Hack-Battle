@@ -1,5 +1,11 @@
-import React from 'react'
+import React from 'react';
+import FAQ from '../components/FAQPage'; // Adjust the path if FAQ.jsx is in a different folder
 
 export default function Products() {
-	return <div>Products page</div>
+  return (
+    <div>
+      <FAQ />
+    </div>
+  );
 }
+

@@ -1,14 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Img1 from "../assets/C1.png"
 
 const Carousel = () => {
     const fadeIn = "transition-opacity duration-700 opacity-0";
     const [items, setItems] = useState([
         {
-            backgroundImage: "https://i.ibb.co/qCkd9jS/img1.jpg",
-            name: "Switzerland",
-            description: "X-Dev, Transforming code into visual poetry..!",
+            backgroundImage: {Img1},
+            // name: "Switzerland",
+            // description: "X-Dev, Transforming code into visual poetry..!",
         },
         {
             backgroundImage: "https://i.ibb.co/jrRb11q/img2.jpg",
@@ -58,7 +59,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full h-[500px] ml-0">
+        <div className="relative w-full h-[500px] mr-80">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px] h-full">
                 <div className="relative w-full h-full">
                     {items.map((item, index) => (
