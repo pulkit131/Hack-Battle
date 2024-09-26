@@ -12,6 +12,7 @@ import HoverCard from "./components/HoverCard";
 import Orders from "./components/Orders";
 import Customer from "./components/Customer";
 import ContactUs from "./ContactUs";
+import NewsSection from "./components/News";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/team" element={<Orders />} />
           <Route path="/overview" element={<Customer />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/news" element={<NewsSection />} />
           <Route path="/xray" element={<Xray />} />
           <Route path="/deepfake" element={<DeepFake />} />
         </Route>
