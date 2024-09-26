@@ -9,6 +9,8 @@ import {
 	HiOutlineCog
 } from 'react-icons/hi'
 
+import { AiFillEdit } from "react-icons/ai";
+
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
 		key: 'dashboard',
@@ -17,33 +19,33 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/products',
+		key: 'faq',
+		label: 'FAQ',
+		path: '/FAQ',
 		icon: <HiOutlineCube />
 	},
 	{
-		key: 'orders',
-		label: 'Orders',
-		path: '/orders',
-		icon: <HiOutlineShoppingCart />
+		key: 'overview',
+		label: 'Overview',
+		path: '/overview',
+		icon: <AiFillEdit />
 	},
 	{
-		key: 'customers',
-		label: 'Customers',
-		path: '/customers',
+		key: 'news',
+		label: 'News',
+		path: '/news',
 		icon: <HiOutlineUsers />
 	},
 	{
-		key: 'transactions',
-		label: 'Transactions',
-		path: '/transactions',
+		key: 'team',
+		label: 'Team',
+		path: '/team',
 		icon: <HiOutlineDocumentText />
 	},
 	{
-		key: 'messages',
-		label: 'Messages',
-		path: '/messages',
+		key: 'contactus',
+		label: 'ContactUs',
+		path: '/contactus',
 		icon: <HiOutlineAnnotation />
 	}
 ]

@@ -8,7 +8,7 @@ export default function Header() {
 	const navigate = useNavigate()
 
 	return (
-		<div className="bg-neutral-900 h-16 w-full px-4 flex items-center border-b border-gray-200 justify-between">
+		<div className="bg-neutral-900 h-16 w-full  flex items-center border-b border-gray-200 justify-between">
 			<div className="relative">
 				<HiOutlineSearch fontSize={20} className="text-green-700 absolute top-1/2 left-3 -translate-y-1/2" />
 				<input
@@ -17,7 +17,7 @@ export default function Header() {
 					className="text-sm focus:outline-none active:outline-none border-green-700 border-2 w-[24rem] h-10 pl-11 pr-4 rounded-sm"
 				/>
 			</div>
-			<div className="flex items-center gap-2 mr-2">
+			{/* <div className="flex items-center gap-2 mr-2">
 				<Popover className="relative">
 					{({ open }) => (
 						<>
@@ -141,7 +141,7 @@ export default function Header() {
 						</Menu.Items>
 					</Transition>
 				</Menu>
-			</div>
+			</div> */}
 		</div>
 	)
 }

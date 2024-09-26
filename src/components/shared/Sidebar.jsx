@@ -10,7 +10,8 @@ const linkClass =
 
 export default function Sidebar() {
 	return (
-		<div className="bg-neutral-900 w-60 p-3 flex flex-col">
+		<div className="bg-neutral-900 w-60 p-3 flex flex-col h-1/2 rounded-br-2xl sticky top-0 left-0">
+
 			<div className="flex items-center gap-2 px-1 py-3">
 				<FcBullish fontSize={24} />
 				<span className="text-neutral-200 text-lg">HackBattle</span>
@@ -20,7 +21,7 @@ export default function Sidebar() {
 					<SidebarLink key={link.key} link={link} />
 				))}
 			</div>
-			<div className="flex flex-col gap-0.5 pt-2 border-t border-neutral-700">
+			{/* <div className="flex flex-col gap-0.5 pt-2 border-t border-neutral-700">
 				{DASHBOARD_SIDEBAR_BOTTOM_LINKS.map((link) => (
 					<SidebarLink key={link.key} link={link} />
 				))}
@@ -30,7 +31,7 @@ export default function Sidebar() {
 					</span>
 					Logout
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

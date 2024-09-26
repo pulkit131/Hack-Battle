@@ -8,6 +8,11 @@ import Products from '../src/pages/Product';
 import Layout from "./components/shared/Layout";
 import Xray from "./components/Xray";
 import DeepFake from "./components/DeepFake";
+import HoverCard from "./components/HoverCard";
+import Orders from "./components/Orders";
+import Customer from "./components/Customer";
+import ContactUs from "./ContactUs";
+
 function App() {
   const location = useLocation();
 
@@ -16,7 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="products" element={<Products />} />
+          <Route path="/FAQ" element={<Products />} />
+          <Route path="/team" element={<Orders />} />
+          <Route path="/overview" element={<Customer />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/xray" element={<Xray />} />
           <Route path="/deepfake" element={<DeepFake />} />
         </Route>

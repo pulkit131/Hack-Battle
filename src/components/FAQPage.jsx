@@ -98,11 +98,11 @@ const FAQPage = () => {
             <div className="bg-green-700 text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
                 <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
                 <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-black">Us!</span></h1>
-                <input className="w-full max-w-xs p-2 border border-cyan-400 text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" />
-                <p className="absolute right-40 top-1/2 transform -translate-y-1/2 text-right text-xl max-w-xl">
+                <input className="w-full max-w-xs p-2 border border-black text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" />
+                {/* <p className="absolute right-40 top-1/2 transform -translate-y-1/2 text-right text-xl max-w-xl">
                     Save 100s of man hours monitoring and detect crucial events. 
                     <br /> Detect events. Every day. Automatically.
-                </p>
+                </p> */}
             </div>
 
             <div className="mb-10 px-8 flex items-start min-h-full py-12">
