@@ -18,6 +18,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="products" element={<Products />} />
           <Route path="/xray" element={<Xray />} />
+          <Route path="/deepfake" element={<DeepFake />} />
         </Route>
         <Route path="/register" element={<Register />} />
       </Routes>

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import axios from 'axios'; // Import Axios for making HTTP requests
 
 const ImageUpload = () => {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [result, setResult] = useState(null); // To display prediction result
 
     const handleImageChange = (event) => {
         if (event.target.files && event.target.files[0]) {
@@ -11,15 +13,30 @@ const ImageUpload = () => {
 
     const handleRun = () => {
         if (selectedImage) {
-            // You can add your logic to handle the image or run some process here.
-            console.log("Running with the selected image:", selectedImage);
+            // Create FormData to append the image file
+            const formData = new FormData();
+            formData.append("file", selectedImage);
+
+            // Post the image to the /upload endpoint of the Express server
+            axios.post('http://localhost:3000/upload', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then(response => {
+                // Handle the response from the server
+                setResult(response.data);  // Store result to display later
+            })
+            .catch(error => {
+                console.error("There was an error uploading the image!", error);
+            });
         } else {
             alert("Please upload an image first.");
         }
     };
 
     return (
-        <div className="flex items-center space-x-4 p-4 bg-gray-100 rounded-lg">
+        <div className="flex flex-col items-center space-y-4 p-4 bg-gray-100 rounded-lg">
             {/* Image Input */}
             <input
                 type="file"
@@ -35,6 +52,14 @@ const ImageUpload = () => {
             >
                 Run
             </button>
+
+            {/* Display the prediction result */}
+            {result && (
+                <div className="mt-4 p-4 bg-white border border-gray-300 rounded-lg shadow-md w-full max-w-lg">
+                    <h2 className="font-bold text-lg mb-2 text-center">Prediction Result:</h2>
+                    <pre className="whitespace-pre-wrap break-words text-center">{JSON.stringify(result, null, 2)}</pre>
+                </div>
+            )}
         </div>
     );
 };

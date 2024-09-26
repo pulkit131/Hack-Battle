@@ -5,7 +5,7 @@ import Image1 from '../assets/H0.jpg';
 import Image2 from '../assets/H1.jpg';
 import Image3 from '../assets/H2.jpg';
 
-const Card = ({ number, title, content, image, hoverImage }) => {
+const Card = ({ number, title, content, image, hoverImage, link }) => {
     const cardRef = useRef(null);
 
     useEffect(() => {
@@ -47,7 +47,7 @@ const Card = ({ number, title, content, image, hoverImage }) => {
                 <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg">
                     Read More
                 </button>
-                <Link to="/xray">
+                <Link to={link}>
                     <button className="px-4 py-2 bg-black text-white rounded-full shadow-lg ml-2">
                         Run!
                     </button>
@@ -66,6 +66,7 @@ const Cards = () => {
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image1} // Replace with your image URL
                 hoverImage={Image2} // Optional hover image
+                link="/xray" // Link for this card
             />
             <Card
                 number="02"
@@ -73,6 +74,7 @@ const Cards = () => {
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image2} // Replace with your image URL
                 hoverImage={Image3} // Optional hover image
+                link="/deepfake" // Link for this card
             />
             <Card
                 number="03"
@@ -80,6 +82,7 @@ const Cards = () => {
                 content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
                 image={Image3} // Replace with your image URL
                 hoverImage={Image1} // Optional hover image
+                link="/medical" // Link for this card
             />
         </div>
     );
