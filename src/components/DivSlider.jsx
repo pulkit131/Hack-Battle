@@ -26,9 +26,7 @@ const DivSlider = () => {
 
                     <h2 className='text-white text-xl font-semibold mt-20'>Medical Image Synthesizer</h2>
                     <p className='text-white mt-4'>
-                        Describe the service and how customers or clients can benefit from it. 
-                        It’s an opportunity to add a short description with relevant details, 
-                        like pricing, duration and how to book.
+                    A Generative Adversarial Network (GAN) for medical image synthesis consists of a generator that creates synthetic images from random noise using transposed convolutions, and a discriminator that distinguishes real from fake images with convolutional layers. Both networks use Binary Cross-Entropy Loss and the Adam optimizer with a learning rate of 0.0002. The training loop alternates between training the discriminator and the generator, iterating over multiple epochs to improve image realism.
                     </p>
                 </div>
 
@@ -55,9 +53,7 @@ const DivSlider = () => {
 
                     <h2 className='text-xl font-semibold'>Deep-Fake Img Recognition</h2>
                     <p className='text-gray-600'>
-                        Describe the service and how customers or clients can benefit from it. 
-                        It’s an opportunity to add a short description with relevant details, 
-                        like pricing, duration and how to book.
+                    Deepfake image recognition aims to detect manipulated images and distinguish them from authentic ones. The implementation typically utilizes a convolutional neural network (CNN) to extract features from images, followed by fully connected layers for classification. The model is trained on a dataset containing both real and deepfake images, using Binary Cross-Entropy Loss and the Adam optimizer for updates. The training process enables the model to identify subtle artifacts and inconsistencies characteristic of deepfakes, improving its ability to classify new images as real or fake.
                     </p>
                 </div>
 
@@ -66,10 +62,7 @@ const DivSlider = () => {
                     <img src={Image3} alt='Execution Icon' className='mx-auto mb-4 w-32 h-32' />
                     <h2 className='text-xl font-semibold'>Execution</h2>
                     <p className='text-gray-600'>
-                        Describe the service and how customers or clients can benefit from it. 
-                        It’s an opportunity to add a short description with relevant details, 
-                        like pricing, duration and how to book.
-                    </p>
+                    The implementation of deepfake image recognition began with data collection, where we gathered a comprehensive dataset consisting of both real and deepfake images. Next, we constructed a convolutional neural network (CNN) designed to extract relevant features, complemented by fully connected layers for effective classification. During the training phase, we utilized Binary Cross-Entropy Loss alongside the Adam optimizer, iterating through multiple epochs to optimize the model's performance. After training, we evaluated the model on a separate validation set to measure its accuracy in classifying images as real or fake. Finally, we integrated the trained model into applications for real-time deepfake detection, enabling efficient and reliable verification of image authenticity.</p>
                 </div>
             </div>
 
@@ -79,7 +72,7 @@ const DivSlider = () => {
                <section className='flex justify-center items-center h-screen'>
   <div 
     className='p-10 rounded-tl-3xl rounded-bl-3xl bg-cover bg-center ml-4 ' 
-    style={{ backgroundImage: `url(${Image4})`, width: '648px', height: '730px' }}
+    style={{ backgroundImage: `url(${Image4})`, width: '648px', height: '729px' }}
   >
     {/* Content here */}
   </div>
@@ -98,9 +91,7 @@ const DivSlider = () => {
 </div>
                     <h2 className='text-white text-xl font-semibold'>Medical Prescription Analyzer</h2>
                     <p className='text-white'>
-                        Describe the service and how customers or clients can benefit from it. 
-                        It’s an opportunity to add a short description with relevant details, 
-                        like pricing, duration and how to book.
+                    A medical prescription analyzer utilizes machine learning to extract and interpret data from prescriptions. It processes handwritten or printed prescriptions, identifying key information such as medication names and dosages. This analysis enhances accuracy in medication management and reduces errors in patient care.
                     </p>
                 </div>
             </div>
