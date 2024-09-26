@@ -10,37 +10,37 @@ const cards = [
     {
         id: 1,
         name: 'Pulkit Nandwana',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Front-end Developer',
         photo: founder1
     },
     {
         id: 2,
         name: 'Ved Raut',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Operations , Ai/Ml developer',
         photo: founder2
     },
     {
         id: 3,
         name: 'Ayush',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Back-end Developer',
         photo: founder3
     },
     {
         id: 4,
         name: 'Vanshika',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Back-end Developer',
         photo: founder4
     },
     {
         id: 5,
         name: 'Ranesh',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Ai/ML Developer',
         photo: founder5
     },
     {
         id: 6,
         name: 'Keerthi',
-        designation: 'Co founder, Chairman, Executive Director',
+        designation: 'Ai/ML Developer',
         photo: founder6
     }
 ];
@@ -51,7 +51,7 @@ const HoverCard = () => {
     return (
         <div className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
             {/* Heading */}
-            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-audiowide leading-tight text-white text-center mb-8">
+            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-audiowide leading-tight text-black text-center mb-8">
                 Team Members
             </h2>
 
@@ -60,7 +60,7 @@ const HoverCard = () => {
                 {cards.map((card, index) => (
                     <div
                         key={card.id}
-                        className={`relative w-full h-80 p-4 rounded-xl shadow-xl transition-all duration-300 
+                        className={`relative w-full h-80 w-80 p-4 rounded-xl shadow-xl transition-all duration-300 
                         bg-black opacity-90
                         `}
                         onMouseEnter={() => setHoveredCard(index)}

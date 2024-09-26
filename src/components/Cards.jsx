@@ -79,14 +79,7 @@ const Cards = () => {
             <Card
                 number="03"
                 title="Medical Prescription Analyzer"
-                content="A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.
-
-
-
-
-
-
-"
+                content="A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care."
                 image={Image3} // Replace with your image URL
                 hoverImage={Image1} // Optional hover image
                 link="/medical" // Link for this card

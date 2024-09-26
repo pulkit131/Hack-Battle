@@ -5,37 +5,38 @@ import Img1 from "../assets/C1.png"
 
 const Carousel = () => {
     const fadeIn = "transition-opacity duration-700 opacity-0";
+    console.log(Img1)
     const [items, setItems] = useState([
         {
-            backgroundImage: {Img1},
+            backgroundImage: Img1,
             // name: "Switzerland",
             // description: "X-Dev, Transforming code into visual poetry..!",
         },
         {
-            backgroundImage: "https://i.ibb.co/jrRb11q/img2.jpg",
-            name: "Finland",
-            description: "X-Dev, Transforming code into visual poetry..!",
+            backgroundImage: "https://i.pinimg.com/originals/e5/f9/d5/e5f9d5265ccb6969696f69663091ca15.gif",
+            name: "Medical Image Synthesizer",
+            description: "AI systems that generate synthetic medical images (e.g., X-rays, MRIs) to augment datasets for research and training, addressing privacy issues in real medical data.",
         },
         {
-            backgroundImage: "https://i.ibb.co/NSwVv8D/img3.jpg",
-            name: "Iceland",
-            description: "X-Dev, Transforming code into visual poetry..!",
+            backgroundImage: "https://i.pinimg.com/originals/81/17/8b/81178b47a8598f0c81c4799f2cdd4057.gif",
+            name: "Deep-Fake Img Recognition",
+            description: "Deepfake image recognition uses a CNN to distinguish real from manipulated images, training on a dataset to detect subtle artifacts.",
         },
         {
-            backgroundImage: "https://i.ibb.co/Bq4Q0M8/img4.jpg",
-            name: "Australia",
-            description: "X-Dev, Transforming code into visual poetry..!",
+            backgroundImage: "https://i.pinimg.com/originals/29/24/62/2924624b72ad602afebc66b4cb862a11.gif",
+            name: "Medical Prescription Analyzer",
+            description: "A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.",
         },
-        {
-            backgroundImage: "https://i.ibb.co/jTQfmTq/img5.jpg",
-            name: "Netherlands",
-            description: "X-Dev, Transforming code into visual poetry..!",
-        },
-        {
-            backgroundImage: "https://i.ibb.co/RNkk6L0/img6.jpg",
-            name: "Ireland",
-            description: "X-Dev, Transforming code into visual poetry..!",
-        },
+        // {
+        //     backgroundImage: "https://i.ibb.co/jTQfmTq/img5.jpg",
+        //     name: "Netherlands",
+        //     description: "X-Dev, Transforming code into visual poetry..!",
+        // },
+        // {
+        //     backgroundImage: "https://i.ibb.co/RNkk6L0/img6.jpg",
+        //     name: "Ireland",
+        //     description: "X-Dev, Transforming code into visual poetry..!",
+        // },
     ]);
 
     useEffect(() => {
@@ -59,7 +60,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full h-[500px] mr-80">
+        <div className="relative w-full h-[550px] mr-80">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1000px] h-full">
                 <div className="relative w-full h-full">
                     {items.map((item, index) => (
@@ -85,9 +86,9 @@ const Carousel = () => {
                                 >
                                     <h2 className="text-4xl font-bold uppercase">{item.name}</h2>
                                     <p className="mt-2 mb-5 animation-delay-300">{item.description}</p>
-                                    <button className="px-5 py-2.5 w-32 bg-white text-black animation-delay-600">
+                                    {/* <button className="px-5 py-2.5 w-32 bg-white text-black animation-delay-600">
                                         See More
-                                    </button>
+                                    </button> */}
                                 </div>
                             )}
                         </div>

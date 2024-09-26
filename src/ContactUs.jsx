@@ -73,7 +73,7 @@ const ContactUs = () => {
     };
 
     return (
-        <section className="w-full p-4">
+        <section className="w-full  p-4">
             <div className="max-w-5xl mx-auto mt-8 grid md:grid-cols-2 bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
                 <div className="bg-green-700 p-8 text-white">
                     <h2 className="text-3xl font-bold">Contact Information</h2>
