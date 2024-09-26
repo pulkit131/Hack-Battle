@@ -1,8 +1,9 @@
 import React from 'react';
 import FAQPage from './FAQPage.jsx';
-import Image1 from '../assets/w1.3.r.png';
+import Image1 from '../assets/p3.webp';
 import Image2 from '../assets/w2a.r.png';
 import Image3 from '../assets/w2b.r.png';
+import Image4 from '../assets/mainphoto.jpg';
 
 const DivSlider = () => {
     return (
@@ -34,8 +35,8 @@ const DivSlider = () => {
                 {/* Execution Section */}
                 <section className='flex justify-center items-center h-screen'>
   <div 
-    className='p-10 rounded-tr-3xl rounded-br-3xl bg-cover bg-center ml-4 mb-10' 
-    style={{ backgroundImage: `url(${Image1})`, width: '648px', height: '650px' }}
+    className='p-10 rounded-tr-3xl rounded-br-3xl bg-cover bg-center ml-0 mb-10' 
+    style={{ backgroundImage: `url(${Image1})`, width: '684px', height: '690px' }}
   >
     {/* Content here */}
   </div>
@@ -73,12 +74,12 @@ const DivSlider = () => {
             </div>
 
             {/* Another Section */}
-            <div className='w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-white mx-auto flex'>
+            <div className='w-[90%] h-[100vh] sticky top-20 rounded-tl-3xl rounded-tr-3xl bg-black mx-auto flex'>
                 {/* Strategy Section */}
                <section className='flex justify-center items-center h-screen'>
   <div 
-    className='p-10 rounded-tl-3xl rounded-bl-3xl bg-cover bg-center ml-4 mb-10' 
-    style={{ backgroundImage: `url(${Image1})`, width: '648px', height: '650px' }}
+    className='p-10 rounded-tl-3xl rounded-bl-3xl bg-cover bg-center ml-4 ' 
+    style={{ backgroundImage: `url(${Image4})`, width: '648px', height: '730px' }}
   >
     {/* Content here */}
   </div>
