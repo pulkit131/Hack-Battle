@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useSnackbar } from "notistack";
+import { FaPhone } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { IoLink } from "react-icons/io5"
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -67,33 +74,33 @@ const ContactUs = () => {
 
     return (
         <section className="w-full p-4">
-            <div className="max-w-5xl mx-auto mt-8 grid md:grid-cols-2 bg-gray-100 rounded-lg shadow-lg overflow-hidden">
-                <div className="bg-gradient-to-br from-purple-700 to-pink-500 p-8 text-white">
+            <div className="max-w-5xl mx-auto mt-8 grid md:grid-cols-2 bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
+                <div className="bg-green-700 p-8 text-white">
                     <h2 className="text-3xl font-bold">Contact Information</h2>
                     <h3 className="text-lg font-light mt-4">Fill up the form and our Team will get back to you within 24 hours</h3>
                     <ul className="mt-12 space-y-6">
                         <li className="flex items-center">
-                            <i className="fas fa-phone-alt bg-red-500 p-3 rounded-full mr-4"></i>
-                            <span className="font-semibold">Phone:</span> <a href="tel:+1235235598" className="ml-2">+ 1235 2355 98</a>
+                            <FaPhone  className="mr-4" />
+                            <span className="font-semibold ">Phone:</span> <a href="tel:+1235235598" className="ml-2 text-black">+ 1235 2355 98</a>
                         </li>
                         <li className="flex items-center">
-                            <i className="fas fa-paper-plane bg-red-500 p-3 rounded-full mr-4"></i>
-                            <span className="font-semibold">Email:</span> <a href="mailto:info@yoursite.com" className="ml-2">info@yoursite.com</a>
+                            <IoMdMail className=" mr-4"/>
+                            <span className="font-semibold ">Email:</span> <a href="mailto:info@yoursite.com" className="ml-2 text-black">info@yoursite.com</a>
                         </li>
                         <li className="flex items-center">
-                            <i className="fas fa-globe bg-red-500 p-3 rounded-full mr-4"></i>
-                            <span className="font-semibold">Website:</span> <a href="#" className="ml-2">yoursite.com</a>
+                            <IoLink className="mr-4"/>
+                            <span className="font-semibold ">Website:</span> <a href="#" className="ml-2 text-black">yoursite.com</a>
                         </li>
                     </ul>
                     <ul className="flex space-x-4 mt-8 justify-center">
-                        <li><a href="#" className="bg-red-500 p-4 rounded-lg"><i className="fab fa-facebook"></i></a></li>
-                        <li><a href="#" className="bg-red-500 p-4 rounded-lg"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="#" className="bg-red-500 p-4 rounded-lg"><i className="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" className="text-black"><FaLinkedin className="fab fa-facebook"/></a></li>
+                        <li><a href="#" className="text-black"><FaGithub className="fab fa-twitter"/></a></li>
+                        <li><a href="#" className="text-black"><RiInstagramFill className="fab fa-linkedin-in"/></a></li>
                     </ul>
                 </div>
                 <div className="p-8">
                     <form onSubmit={handleSubmit}>
-                        <h2 className="text-3xl font-bold text-purple-700">Send us a message</h2>
+                        <h2 className="text-3xl font-bold text-green-700">Send us a message</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                             <div>
                                 <input
@@ -145,7 +152,7 @@ const ContactUs = () => {
                                 />
                             </div>
                         </div>
-                        <button type="submit" className="w-full md:w-auto bg-purple-700 text-white py-3 px-6 mt-6 rounded-lg hover:bg-purple-800 transition">
+                        <button type="submit" className="w-full md:w-auto bg-green-700 text-white py-3 px-6 mt-6 rounded-lg hover:bg-purple-800 transition">
                             Send Message
                         </button>
                     </form>
