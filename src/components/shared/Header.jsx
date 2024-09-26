@@ -16,7 +16,7 @@ export default function Header() {
 		<div className="bg-neutral-900 h-20 w-full flex items-center justify-between px-4 border-b border-gray-200">
 			{/* Left side: Logo */}
 			<div className="flex items-center gap-2">
-				<FaBrain fontSize={30} className='text-green-700'/>
+				<FaBrain fontSize={30} className='text-green-500'/>
 				<span className="text-neutral-200 text-lg">HackBattle</span>
 			</div>
 

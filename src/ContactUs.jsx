@@ -50,7 +50,7 @@ const ContactUs = () => {
         const templateParams = {
             from_name: `${formData.firstName} ${formData.lastName}`,
             from_email: formData.email,
-            to_name: "KalkiNI",
+            to_name: "Pulkit",
             message: formData.message
         };
 

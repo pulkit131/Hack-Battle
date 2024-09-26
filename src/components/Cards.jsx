@@ -59,7 +59,7 @@ const Card = ({ number, title, content, image, hoverImage, link }) => {
 
 const Cards = () => {
     return (
-        <div className="flex-1 flex gap-12 items-center justify-center space-x-8 h-full">
+        <div className="flex-1 flex gap-12 items-center justify-center space-x-24 h-full">
             <Card
                 number="01"
                 title="Medical Image Synthesizer"
