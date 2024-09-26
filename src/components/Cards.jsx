@@ -63,7 +63,7 @@ const Cards = () => {
             <Card
                 number="01"
                 title="Medical Image Synthesizer"
-                content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
+                content="AI systems that generate synthetic medical images (e.g., X-rays, MRIs) to augment datasets for research and training, addressing privacy issues in real medical data."
                 image={Image1} // Replace with your image URL
                 hoverImage={Image2} // Optional hover image
                 link="/xray" // Link for this card
@@ -71,7 +71,7 @@ const Cards = () => {
             <Card
                 number="02"
                 title="Deep-Fake Img Recognition"
-                content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
+                content="Deepfake image recognition uses a CNN to distinguish real from manipulated images, training on a dataset to detect subtle artifacts."
                 image={Image2} // Replace with your image URL
                 hoverImage={Image3} // Optional hover image
                 link="/deepfake" // Link for this card
@@ -79,7 +79,14 @@ const Cards = () => {
             <Card
                 number="03"
                 title="Medical Prescription Analyzer"
-                content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magnam porro cupiditate at ipsum qui beatae odit animi ab, enim vel! Accusantium similique id molestiae dicta unde, corrupti eaque ducimus!"
+                content="A medical prescription analyzer leverages machine learning to extract medication names and dosages from prescriptions, improving accuracy and reducing errors in patient care.
+
+
+
+
+
+
+"
                 image={Image3} // Replace with your image URL
                 hoverImage={Image1} // Optional hover image
                 link="/medical" // Link for this card

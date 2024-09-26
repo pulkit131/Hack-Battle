@@ -85,17 +85,17 @@ const ContactUs = () => {
                         </li>
                         <li className="flex items-center">
                             <IoMdMail className=" mr-4"/>
-                            <span className="font-semibold ">Email:</span> <a href="mailto:info@yoursite.com" className="ml-2 text-black">info@yoursite.com</a>
+                            <span className="font-semibold ">Email:</span> <a href="mailto:hackbattle@gmail.com" className="ml-2 text-black">hackbattle@gmail.com</a>
                         </li>
                         <li className="flex items-center">
                             <IoLink className="mr-4"/>
-                            <span className="font-semibold ">Website:</span> <a href="#" className="ml-2 text-black">yoursite.com</a>
+                            <span className="font-semibold ">Website:</span> <a href="https://hackbattle.ieeecsvit.com/" className="ml-2 text-black">hackbattle.com</a>
                         </li>
                     </ul>
                     <ul className="flex space-x-4 mt-8 justify-center">
-                        <li><a href="#" className="text-black"><FaLinkedin className="fab fa-facebook"/></a></li>
-                        <li><a href="#" className="text-black"><FaGithub className="fab fa-twitter"/></a></li>
-                        <li><a href="#" className="text-black"><RiInstagramFill className="fab fa-linkedin-in"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/pulkitnandwana/" className="text-black"><FaLinkedin className="fab fa-facebook text-2xl"/></a></li>
+                        <li><a href="https://github.com/pulkit131" className="text-black"><FaGithub className="fab fa-twitter text-2xl"/></a></li>
+                        <li><a href="https://www.instagram.com/ieeecs_vit/" className="text-black"><RiInstagramFill className="fab fa-linkedin-in text-2xl"/></a></li>
                     </ul>
                 </div>
                 <div className="p-8">
@@ -152,7 +152,7 @@ const ContactUs = () => {
                                 />
                             </div>
                         </div>
-                        <button type="submit" className="w-full md:w-auto bg-green-700 text-white py-3 px-6 mt-6 rounded-lg hover:bg-purple-800 transition">
+                        <button type="submit" className="w-full md:w-auto bg-green-700 text-white py-3 px-6 mt-6 rounded-lg hover:bg-green-500 transition">
                             Send Message
                         </button>
                     </form>

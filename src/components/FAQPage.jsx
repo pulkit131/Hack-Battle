@@ -6,46 +6,46 @@ const FAQPage = () => {
         {
             id: 1,
             toggle: false,
-            question: 'How does the AI detect violence in surveillance footage?',
+            question: 'What is a medical prescription analyzer?',
             answer:
-                'Our system uses advanced deep learning models to analyse patterns and behaviours in video footage. Can identify potential violent and malignant activities.',
+                'A medical prescription analyzer is a tool that uses machine learning to extract and interpret data from prescriptions..',
         },
         {
             id: 2,
             toggle: false,
-            question: "How does the system notify us of potential violence?",
+            question: "What is deepfake image recognition?",
             answer:
-                'When the system detects possible violent behaviour, it flags the specific slice of footage and sends an instant alert to an assigned operator for review.',
+                'Deepfake image recognition is a technology that detects manipulated images and distinguishes them from authentic ones using machine learning algorithms.',
         },
         {
             id: 3,
             toggle: false,
             question:
-                "Can the system integrate with my existing CCTV setup?",
+                "What is a medical image synthesizer?",
             answer:
-                'Yes, our AI solution is designed to work with most existing CCTV systems, transforming them into smart surveillance setups without the need for extensive hardware upgrades.',
+                'A medical image synthesizer is a tool that generates synthetic medical images using machine learning techniques, typically through a Generative Adversarial Network (GAN).',
         },
         {
             id: 4,
             toggle: false,
             question:
-                "How accurate is the detection?",
+                "What are the applications of synthetic medical images?",
             answer:
-                'The system achieves up to 92% accuracy in detecting violent activities, ensuring minimal false positives and highly reliable alerts.',
+                'Synthetic images can be used for training machine learning models, augmenting datasets, and improving diagnostic accuracy in medical imaging.',
         },
         {
             id: 5,
             toggle: false,
-            question: "What kind of footage is flagged for review?",
+            question: "How does the prescription analyzer improve patient care?",
             answer:
-                'Only video segments where the AI detects potential violence are flagged, allowing your security team to focus on relevant footage and reduce manual monitoring time.',
+                'By enhancing accuracy in medication management, it helps reduce errors in patient care, ensuring safer medication practices.',
         },
         {
             id: 6,
             toggle: false,
-            question: 'Is the system capable of 24/7 monitoring?',
+            question: 'How does deepfake detection work?',
             answer:
-                'Yes, our AI surveillance solution provides continuous monitoring and detection around the clock, ensuring real-time threat detection and alerts.',
+                'It employs a convolutional neural network (CNN) to extract features from images and classify them as real or fake.',
         },
     ];
 
@@ -53,16 +53,16 @@ const FAQPage = () => {
         {
             id: 1,
             toggle: false,
-            question: 'Is it a one-time payment?',
+            question: 'How long can I use the service for free?',
             answer:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero eveniet deleniti, consequatur ut maiores. Autem vel impedit praesentium porro aspernatur dicta iure nisi nobis. Vel aliquid tempora iste autem.',
+                'You can use the service for free for 1 month.',
         },
         {
             id: 2,
             toggle: false,
-            question: 'How does billing work?',
+            question: ' What payment methods do you accept?',
             answer:
-                'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis libero eveniet deleniti, consequatur ut maiores. Autem vel impedit praesentium porro aspernatur dicta iure nisi nobis. Vel aliquid tempora iste autem.',
+                'We accept various payment methods, including credit cards and PayPal.',
         },
     ];
 
@@ -98,7 +98,7 @@ const FAQPage = () => {
             <div className="bg-green-700 text-white py-10 px-20 mb-10 text-center relative flex flex-col items-start rounded-tl-3xl rounded-tr-3xl">
                 <p className="mb-2 text-left text-lg" id="support">Customer Support</p>
                 <h1 className="text-5xl mb-6 text-left">Top questions about <span id="title" className="text-black">Us!</span></h1>
-                <input className="w-full max-w-xs p-2 border border-black text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" />
+                {/* <input className="w-full max-w-xs p-2 border border-black text-white rounded bg-transparent text-xl mt-5" type="text" placeholder="Search" /> */}
                 {/* <p className="absolute right-40 top-1/2 transform -translate-y-1/2 text-right text-xl max-w-xl">
                     Save 100s of man hours monitoring and detect crucial events. 
                     <br /> Detect events. Every day. Automatically.
@@ -118,7 +118,7 @@ const FAQPage = () => {
                         <div className="border-b border-gray-300 py-2 w-full flex flex-col justify-center" key={q.id}>
                             <div className="flex justify-between items-center">
                                 <h3 className="text-xl text-white">{q.question}</h3>
-                                <span className="text-2xl cursor-pointer pl-2 text-white" onClick={() => handleToggle(q.id)}>
+                                <span className="text-2xl cursor-pointer pl-2 text-green-500" onClick={() => handleToggle(q.id)}>
                                     {q.toggle ? '-' : '+'}
                                 </span>
                             </div>
@@ -140,7 +140,7 @@ const FAQPage = () => {
                         <div className="border-b border-gray-300 py-2 w-full flex flex-col justify-center" key={q.id}>
                             <div className="flex justify-between items-center">
                                 <h3 className="text-xl text-white">{q.question}</h3>
-                                <span className="text-2xl cursor-pointer pl-2 text-white" onClick={() => handleToggle2(q.id)}>
+                                <span className="text-2xl cursor-pointer pl-2 text-green-500" onClick={() => handleToggle2(q.id)}>
                                     {q.toggle ? '-' : '+'}
                                 </span>
                             </div>
